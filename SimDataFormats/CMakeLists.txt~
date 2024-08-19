@@ -1,0 +1,49 @@
+add_subdirectory(Provenance)
+add_subdirectory(Common)
+add_subdirectory(DetId)
+add_subdirectory(HcalDetId)
+add_subdirectory(SiStripDetId)
+add_subdirectory(SiPixelDetId)
+add_subdirectory(SiStripDigi)
+add_subdirectory(TrajectoryState)
+add_subdirectory(SiPixelCluster)
+add_subdirectory(L1TrackTrigger)
+add_subdirectory(Phase2TrackerDigi)
+add_subdirectory(Math)
+add_subdirectory(CLHEP)
+add_subdirectory(GeometryVector)
+add_subdirectory(GeometrySurface)
+add_subdirectory(Candidate)
+add_subdirectory(L1CaloTrigger)
+add_subdirectory(L1GlobalCaloTrigger)
+add_subdirectory(L1GlobalMuonTrigger)
+add_subdirectory(GeometryCommonDetAlgo)
+add_subdirectory(SiStripCluster)
+add_subdirectory(TrackerCommon)
+
+add_custom_target(DataFormats_all)
+
+add_dependencies(DataFormats_all
+  DataFormatsProvenance
+  DataFormatsCommon
+  DataFormatsDetId
+  DataFormatsL1TrackTrigger
+  DataFormatsSiStripDetId
+  DataFormatsSiPixelDetId
+  DataFormatsSiStripDigi
+  DataFormatsSiPixelCluster
+  DataFormatsHcalDetId
+  DataFormatsPhase2TrackerDigi
+  DataFormatsTrajectoryState
+  DataFormatsMath
+  DataFormatsCLHEP
+  DataFormatsGeometryVector
+  DataFormatsGeometrySurface
+  DataFormatsGeometryCommonDetAlgo
+  DataFormatsCandidate
+  DataFormatsL1CaloTrigger
+  DataFormatsL1GlobalCaloTrigger
+  DataFormatsL1GlobalMuonTrigger
+  DataFormatsSiStripCluster
+  DataFormatsTrackerCommon
+)
