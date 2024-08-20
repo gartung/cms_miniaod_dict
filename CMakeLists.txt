@@ -139,4 +139,3 @@ add_subdirectory(SimDataFormats)
 add_subdirectory(Geometry)
 
 install(DIRECTORY ${CMAKE_BINARY_DIR}/src DESTINATION ${CMAKE_INSTALL_PREFIX})
-install(FILES ${pcmfiles} ${rootmapfiles} ${CMAKE_BINARY_DIR}/lib/.edmplugincache DESTINATION ${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_LIBDIR})
